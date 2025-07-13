@@ -90,6 +90,14 @@
     background: linear-gradient(90deg, #f9f3ef 0%, #e6dad3 19.71%, #e6dad3 80.29%, #f9f3ef 100%);
 }
 
+.fourth{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .blur_animation{
     animation: blurAnimation linear both;
     animation-timeline: view();
@@ -98,7 +106,7 @@
     0%{
         filter: blur(30px);
     }
-    35%, 55%{
+    35%, 65%{
         filter: blur(0);
     }
     100%{
@@ -164,7 +172,7 @@
 } 
 
 .title{
-    width: 1240px;
+    width: 100%;
     height: 82px;
     font-family: var(--font3);
     font-weight: 700;
@@ -272,6 +280,18 @@
     background: none;
 }
 
+#slideAnimation{
+    animation: Slide both;
+    animation-timeline: view(90% 0%);
+}
+@keyframes Slide{
+    from{
+        opacity: 0;   
+    }to{
+        opacity: 100%;
+    }
+}
+
 .box{
     border: 1px solid #fff;
     border-radius: 20px;
@@ -297,7 +317,6 @@
 .dataImage{
     width: 60px;
     height: 60px;
-    background: red;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -309,6 +328,39 @@
     object-fit: scale-down;
     width: auto;
     height: 60px;
+}
+
+.dataInfo{
+    width: 257px;
+    height: 60px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.name{
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 24px;
+    background: none;
+    color: #402B1C;
+}
+
+.statistic{
+    height: 18px;
+    width: auto;
+    background: #402b1c;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.visual{
+    height: 16px;
+    background: #ea9763;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid #402B1C;
 }
 
 .dataPercent{
@@ -324,3 +376,61 @@
     align-items: center;
 }
 
+#figma{
+    width: 81%;
+}
+
+#ps{
+    width: 97%;
+}
+
+#AdobeI{
+    width: 94%;
+}
+
+#ae{
+    width: 73%;
+}
+
+#cs{
+    width: 75%;
+}
+
+#design{
+    width: 93%;
+}
+
+#illustration{
+    width: 95%;
+}
+
+#md{
+    width: 75%;
+}
+
+#anim{
+    width: 81%;
+}
+
+#ai{
+    width: 80%;
+}
+
+#journey{
+    background: none;
+}
+
+.journeyContainer{
+    width: 1157px;
+    height: 582px;
+    background: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.educationBox{
+    width: 519px;
+    height: 582px;
+    background: blue;
+}
